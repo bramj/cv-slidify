@@ -1,0 +1,319 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://nvd3.org/src/nv.d3.css'>
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='http://nvd3.org/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart1612188eb277' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart1612188eb277()
+    });
+    function drawchart1612188eb277(){  
+      var opts = {
+ "dom": "chart1612188eb277",
+"width":    800,
+"height":    400,
+"x": "date",
+"y": "value",
+"group": "variable",
+"type": "multiBarChart",
+"id": "chart1612188eb277" 
+},
+        data = [
+ {
+ "variable": "Chapter started",
+"date": "2014-02-10",
+"value":             61 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-11",
+"value":            158 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-12",
+"value":            211 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-13",
+"value":            344 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-14",
+"value":            282 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-15",
+"value":            266 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-16",
+"value":            352 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-17",
+"value":            817 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-18",
+"value":           1283 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-19",
+"value":           1343 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-20",
+"value":           1344 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-21",
+"value":           1818 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-22",
+"value":           1398 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-23",
+"value":           1816 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-24",
+"value":           2160 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-25",
+"value":           1812 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-26",
+"value":           1596 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-27",
+"value":           1425 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-02-28",
+"value":           1496 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-03-01",
+"value":           1596 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-03-02",
+"value":           2567 
+},
+{
+ "variable": "Chapter started",
+"date": "2014-03-03",
+"value":           3246 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-10",
+"value":             34 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-11",
+"value":             58 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-12",
+"value":             94 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-13",
+"value":             95 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-14",
+"value":            104 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-15",
+"value":            114 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-16",
+"value":            136 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-17",
+"value":            352 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-18",
+"value":            709 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-19",
+"value":            745 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-20",
+"value":            785 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-21",
+"value":           1162 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-22",
+"value":            934 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-23",
+"value":           1298 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-24",
+"value":           1482 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-25",
+"value":           1273 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-26",
+"value":           1114 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-27",
+"value":           1017 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-02-28",
+"value":           1167 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-03-01",
+"value":           1280 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-03-02",
+"value":           2030 
+},
+{
+ "variable": "Chapter finished",
+"date": "2014-03-03",
+"value":           2589 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .color([ "#fa8248", "#57645e", ",#e4e3d5" ])
+  .showControls(false)
+  .tooltipContent( function(key, x, y, e){
+  return '<b>' + key + '</b>: ' + e.point.value 
+} )
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>

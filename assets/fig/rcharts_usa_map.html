@@ -1,0 +1,490 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart4e76cb1d012' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart4e76cb1d012",
+"width":    800,
+"height":    400,
+"scope": "usa",
+"fills": {
+ "(9,95]": "#EFF3FF",
+"(95,148]": "#BDD7E7",
+"(148,432]": "#6BAED6",
+"(432,1.05e+03]": "#3182BD",
+"(1.05e+03,5.37e+03]": "#08519C" 
+},
+"legend": true,
+"labels": true,
+"data": {
+ "AK": {
+ "region": "Alaska",
+"visits":     11,
+"visitors":      9,
+"pageviews":    279,
+"abbreviated_region": "AK",
+"fillKey": "(9,95]" 
+},
+"AL": {
+ "region": "Alabama",
+"visits":    149,
+"visitors":     39,
+"pageviews":   2302,
+"abbreviated_region": "AL",
+"fillKey": "(148,432]" 
+},
+"AR": {
+ "region": "Arkansas",
+"visits":     92,
+"visitors":     37,
+"pageviews":    952,
+"abbreviated_region": "AR",
+"fillKey": "(9,95]" 
+},
+"AZ": {
+ "region": "Arizona",
+"visits":    432,
+"visitors":    181,
+"pageviews":   5105,
+"abbreviated_region": "AZ",
+"fillKey": "(148,432]" 
+},
+"CA": {
+ "region": "California",
+"visits":   5374,
+"visitors":   1982,
+"pageviews":  67410,
+"abbreviated_region": "CA",
+"fillKey": "(1.05e+03,5.37e+03]" 
+},
+"CO": {
+ "region": "Michigan",
+"visits":    603,
+"visitors":    231,
+"pageviews":   7650,
+"abbreviated_region": "CO",
+"fillKey": "(432,1.05e+03]" 
+},
+"CT": {
+ "region": "Connecticut",
+"visits":    453,
+"visitors":    180,
+"pageviews":   5781,
+"abbreviated_region": "CT",
+"fillKey": "(432,1.05e+03]" 
+},
+"DE": {
+ "region": "Delaware",
+"visits":    109,
+"visitors":     52,
+"pageviews":   1221,
+"abbreviated_region": "DE",
+"fillKey": "(95,148]" 
+},
+"FL": {
+ "region": "Maryland",
+"visits":   1024,
+"visitors":    362,
+"pageviews":  13244,
+"abbreviated_region": "FL",
+"fillKey": "(432,1.05e+03]" 
+},
+"GA": {
+ "region": "Ohio",
+"visits":    711,
+"visitors":    293,
+"pageviews":   9995,
+"abbreviated_region": "GA",
+"fillKey": "(432,1.05e+03]" 
+},
+"HI": {
+ "region": "Hawaii",
+"visits":     96,
+"visitors":     38,
+"pageviews":   1350,
+"abbreviated_region": "HI",
+"fillKey": "(95,148]" 
+},
+"IA": {
+ "region": "Iowa",
+"visits":    126,
+"visitors":     65,
+"pageviews":   1223,
+"abbreviated_region": "IA",
+"fillKey": "(95,148]" 
+},
+"ID": {
+ "region": "Idaho",
+"visits":     95,
+"visitors":     31,
+"pageviews":   1389,
+"abbreviated_region": "ID",
+"fillKey": "(9,95]" 
+},
+"IL": {
+ "region": "Illinois",
+"visits":   1637,
+"visitors":    619,
+"pageviews":  22229,
+"abbreviated_region": "IL",
+"fillKey": "(1.05e+03,5.37e+03]" 
+},
+"IN": {
+ "region": "Indiana",
+"visits":    273,
+"visitors":    120,
+"pageviews":   3602,
+"abbreviated_region": "IN",
+"fillKey": "(148,432]" 
+},
+"KS": {
+ "region": "Kansas",
+"visits":    136,
+"visitors":     53,
+"pageviews":   1559,
+"abbreviated_region": "KS",
+"fillKey": "(95,148]" 
+},
+"KY": {
+ "region": "Kentucky",
+"visits":    273,
+"visitors":     72,
+"pageviews":   3736,
+"abbreviated_region": "KY",
+"fillKey": "(148,432]" 
+},
+"LA": {
+ "region": "Louisiana",
+"visits":    111,
+"visitors":     50,
+"pageviews":   1356,
+"abbreviated_region": "LA",
+"fillKey": "(95,148]" 
+},
+"MA": {
+ "region": "Massachusetts",
+"visits":   1378,
+"visitors":    508,
+"pageviews":  16535,
+"abbreviated_region": "MA",
+"fillKey": "(1.05e+03,5.37e+03]" 
+},
+"MD": {
+ "region": "Georgia",
+"visits":    736,
+"visitors":    290,
+"pageviews":   9743,
+"abbreviated_region": "MD",
+"fillKey": "(432,1.05e+03]" 
+},
+"ME": {
+ "region": "Maine",
+"visits":     81,
+"visitors":     27,
+"pageviews":   1011,
+"abbreviated_region": "ME",
+"fillKey": "(9,95]" 
+},
+"MI": {
+ "region": "District of Columbia",
+"visits":    599,
+"visitors":    253,
+"pageviews":   8281,
+"abbreviated_region": "MI",
+"fillKey": "(432,1.05e+03]" 
+},
+"MN": {
+ "region": "Minnesota",
+"visits":    513,
+"visitors":    200,
+"pageviews":   6596,
+"abbreviated_region": "MN",
+"fillKey": "(432,1.05e+03]" 
+},
+"MO": {
+ "region": "Missouri",
+"visits":    282,
+"visitors":    108,
+"pageviews":   3517,
+"abbreviated_region": "MO",
+"fillKey": "(148,432]" 
+},
+"MS": {
+ "region": "Mississippi",
+"visits":     96,
+"visitors":     35,
+"pageviews":   1816,
+"abbreviated_region": "MS",
+"fillKey": "(95,148]" 
+},
+"MT": {
+ "region": "Montana",
+"visits":     33,
+"visitors":     18,
+"pageviews":    549,
+"abbreviated_region": "MT",
+"fillKey": "(9,95]" 
+},
+"NC": {
+ "region": "Florida",
+"visits":   1049,
+"visitors":    397,
+"pageviews":  14370,
+"abbreviated_region": "NC",
+"fillKey": "(432,1.05e+03]" 
+},
+"ND": {
+ "region": "North Dakota",
+"visits":     67,
+"visitors":     19,
+"pageviews":    846,
+"abbreviated_region": "ND",
+"fillKey": "(9,95]" 
+},
+"NE": {
+ "region": "Nebraska",
+"visits":    104,
+"visitors":     39,
+"pageviews":   1488,
+"abbreviated_region": "NE",
+"fillKey": "(95,148]" 
+},
+"NH": {
+ "region": "New Hampshire",
+"visits":    108,
+"visitors":     40,
+"pageviews":   1271,
+"abbreviated_region": "NH",
+"fillKey": "(95,148]" 
+},
+"NJ": {
+ "region": "Pennsylvania",
+"visits":   1172,
+"visitors":    426,
+"pageviews":  14927,
+"abbreviated_region": "NJ",
+"fillKey": "(1.05e+03,5.37e+03]" 
+},
+"NM": {
+ "region": "New Mexico",
+"visits":     81,
+"visitors":     33,
+"pageviews":    927,
+"abbreviated_region": "NM",
+"fillKey": "(9,95]" 
+},
+"NV": {
+ "region": "Nevada",
+"visits":    132,
+"visitors":     49,
+"pageviews":   1349,
+"abbreviated_region": "NV",
+"fillKey": "(95,148]" 
+},
+"NY": {
+ "region": "New York",
+"visits":   3378,
+"visitors":   1277,
+"pageviews":  41725,
+"abbreviated_region": "NY",
+"fillKey": "(1.05e+03,5.37e+03]" 
+},
+"OH": {
+ "region": "Colorado",
+"visits":    621,
+"visitors":    233,
+"pageviews":   8495,
+"abbreviated_region": "OH",
+"fillKey": "(432,1.05e+03]" 
+},
+"OK": {
+ "region": "Oklahoma",
+"visits":    150,
+"visitors":     67,
+"pageviews":   2025,
+"abbreviated_region": "OK",
+"fillKey": "(148,432]" 
+},
+"OR": {
+ "region": "Oregon",
+"visits":    525,
+"visitors":    190,
+"pageviews":   6250,
+"abbreviated_region": "OR",
+"fillKey": "(432,1.05e+03]" 
+},
+"PA": {
+ "region": "North Carolina",
+"visits":   1101,
+"visitors":    362,
+"pageviews":  14946,
+"abbreviated_region": "PA",
+"fillKey": "(1.05e+03,5.37e+03]" 
+},
+"RI": {
+ "region": "Rhode Island",
+"visits":    189,
+"visitors":     89,
+"pageviews":   3271,
+"abbreviated_region": "RI",
+"fillKey": "(148,432]" 
+},
+"SC": {
+ "region": "South Carolina",
+"visits":    148,
+"visitors":     63,
+"pageviews":   2236,
+"abbreviated_region": "SC",
+"fillKey": "(95,148]" 
+},
+"SD": {
+ "region": "South Dakota",
+"visits":      9,
+"visitors":      3,
+"pageviews":    100,
+"abbreviated_region": "SD",
+"fillKey": null 
+},
+"TN": {
+ "region": "Tennessee",
+"visits":    340,
+"visitors":    122,
+"pageviews":   4501,
+"abbreviated_region": "TN",
+"fillKey": "(148,432]" 
+},
+"TX": {
+ "region": "Texas",
+"visits":   1699,
+"visitors":    643,
+"pageviews":  21769,
+"abbreviated_region": "TX",
+"fillKey": "(1.05e+03,5.37e+03]" 
+},
+"UT": {
+ "region": "Utah",
+"visits":    373,
+"visitors":    126,
+"pageviews":   4025,
+"abbreviated_region": "UT",
+"fillKey": "(148,432]" 
+},
+"VA": {
+ "region": "Virginia",
+"visits":   1310,
+"visitors":    490,
+"pageviews":  18400,
+"abbreviated_region": "VA",
+"fillKey": "(1.05e+03,5.37e+03]" 
+},
+"VT": {
+ "region": "Vermont",
+"visits":     42,
+"visitors":     22,
+"pageviews":    664,
+"abbreviated_region": "VT",
+"fillKey": "(9,95]" 
+},
+"WA": {
+ "region": "Washington",
+"visits":   1441,
+"visitors":    546,
+"pageviews":  20137,
+"abbreviated_region": "WA",
+"fillKey": "(1.05e+03,5.37e+03]" 
+},
+"WI": {
+ "region": "Wisconsin",
+"visits":    381,
+"visitors":    151,
+"pageviews":   4911,
+"abbreviated_region": "WI",
+"fillKey": "(148,432]" 
+},
+"WV": {
+ "region": [ "New Jersey", "West Virginia" ],
+"visits": [   1244,     37 ],
+"visitors": [    511,     15 ],
+"pageviews": [  16630,    595 ],
+"abbreviated_region": [ "WV", "WV" ],
+"fillKey": [ "(1.05e+03,5.37e+03]", "(9,95]" ] 
+},
+"WY": {
+ "region": "Wyoming",
+"visits":     27,
+"visitors":      9,
+"pageviews":    704,
+"abbreviated_region": "WY",
+"fillKey": "(9,95]" 
+} 
+},
+"id": "chart4e76cb1d012" 
+}
+  chartParams.element = document.getElementById('chart4e76cb1d012')
+  
+  
+  var mapchart4e76cb1d012 = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart4e76cb1d012.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart4e76cb1d012.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart4e76cb1d012.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>

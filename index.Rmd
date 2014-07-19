@@ -1,0 +1,78 @@
+--- 
+title       : Curriculum
+subtitle    : 
+framework   : revealjs     # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      #
+mode        : selfcontained # {standalone, draft}
+revealjs:
+  theme: moon
+---
+
+```{r preparecode, echo=FALSE, cache=FALSE}
+library(ggplot2)
+```
+
+# Bram Jans
+
+### Backend Developer
+
+*Looking for a job!*
+
+---
+## Education
+
+### [2011–2012] Master of Engineering - Computer Science
+<font size="5">
+*University of Leuven, Cum Laude*
+<br>*Thesis: Creating a database of narrative event chains*
+<br>*Specialization Software Engineering and Artificial Intelligence*
+<br>*5 months exchange at the Autonomous University of Barcelona, Spain*
+</font>
+
+### [2006–2009] Bachelor of Informatics
+<font size="5">*University of Leuven*</font>
+
+---
+## Jobs
+
+### [2013-Now] Backend developer, DataCamp
+<font size="5">
+Worked on various web dev projects:
+<br>The [DataCamp.com](https://www.datacamp.com) backend, a RESTful API in Ruby on Rails
+<br>Rdocumentation.org, another Rails app communicating with a backend server running R
+</font>
+
+### [2011–2012] IT Consultant, Altran Belgium
+<font size="5">
+Worked full-time with client Elia, owner of the Belgian electricity network. Creation of a new technical and business specifications document, working with Microsoft SQL Server and testing applications provided by a 3rd party company.
+</font>
+
+#### [2010–2011] Student job: Data mining, Brains and Business
+<font size="5">Development of a business analysis tool written in REALbasic.</font>
+
+---
+## Skills
+
+```{r skills-plot, results='asis', echo = FALSE, cache = FALSE}
+df = data.frame(c("Ruby (on Rails)", "HTML/CSS", "SQL", "R", "Linux", "Javascript"), c(8, 6, 7, 6, 7, 5))
+colnames(df) = c("language", "score")
+d = ggplot(data=df, aes(x=language, y = score))
+d = d + geom_bar(position="dodge",stat="identity") + coord_flip() 
+d = d + scale_y_continuous(breaks = seq(0, 12, 1)) 
+d = d + theme(axis.text.x = element_text(size=24, family="Helvetica"),axis.text.y = element_text(size=24))
+d
+```
+
+#### And notions of
+
+<font size="5">Java, Python, Node.js, Matlab, REALbasic</font>
+
+---
+## Languages
+
+- Dutch (native)
+- English (advanced)
+- Spanish (advanced)
+- French (intermediate)
+
