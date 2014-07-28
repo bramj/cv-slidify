@@ -6,7 +6,7 @@ highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      #
 mode        : selfcontained # {standalone, draft}
 revealjs:
-  theme: moon
+  theme: default
 ---
 
 ```{r preparecode, echo=FALSE, cache=FALSE}
@@ -15,13 +15,18 @@ library(ggplot2)
 
 # Bram Jans
 
-### Backend Developer
+### Rails Developer
 
-*Looking for a job!*
+*Looking for a new challenge!*
 
----
-## Education
+<a href="https://github.com/bramj" target="_blank">
+  <img width="80px" src="/Users/bram/Documents/cv-slidify/assets/img/bram.jpg" />
+</a>
 
+--- &vertical
+# Education
+
+***
 ### [2011–2012] Master of Engineering - Computer Science
 <font size="5">
 *University of Leuven, Cum Laude*
@@ -33,29 +38,48 @@ library(ggplot2)
 ### [2006–2009] Bachelor of Informatics
 <font size="5">*University of Leuven*</font>
 
----
-## Jobs
+--- &vertical
+# Projects
 
-### [2013-Now] Backend developer, DataCamp
-<font size="5">
-Worked on various web dev projects:
-<br>The [DataCamp.com](https://www.datacamp.com) backend, a RESTful API in Ruby on Rails
-<br>Rdocumentation.org, another Rails app communicating with a backend server running R
-</font>
+***
+## DataCamp
+<div class="projects">
+<a href="https://www.datacamp.com" target="_blank" class="mask">
+  <img src="/Users/bram/Documents/cv-slidify/assets/img/datacamp_screenshot.png" />
+  <div class="caption">  
+    <h3 style="color:#4D4D4D">Interactive learning platform</h3>  
+    <ul>
+      <li>Interactive environment for learning R</li>
+      <li>I did development for the DataCamp backend, a RESTful API in Ruby on Rails</li>
+      <li>The backend interacts with an Angular.js front end and connects to R servers in the cloud</li>
+      <li>Hosting on Heroku and Amazon AWS (EC2, S3, RDS, etc.)</li>
+    </ul>
+  </div>
+</a>
+</div>
 
-### [2011–2012] IT Consultant, Altran Belgium
-<font size="5">
-Worked full-time with client Elia, owner of the Belgian electricity network. Creation of a new technical and business specifications document, working with Microsoft SQL Server and testing applications provided by a 3rd party company.
-</font>
+***
+## Rdocumentation
+<div class="projects">
+<a href="http://www.rdocumentation.org" target="_blank" class="mask">
+  <img src="/Users/bram/Documents/cv-slidify/assets/img/rdocs_screenshot.png" />
+  <div class="caption">  
+    <h3 style="color:#4D4D4D">R documentation aggregator</h3>  
+    <ul>
+      <li>Rails app that maintains documentation of R packages</li>
+      <li>Automatically updates the documentation by connecting to an R server on EC2</li>
+    </ul>
+  </div>
+</a>
+</div>
 
-#### [2010–2011] Student job: Data mining, Brains and Business
-<font size="5">Development of a business analysis tool written in REALbasic.</font>
+--- &vertical
+# Skills
 
----
-## Skills
+***
 
 ```{r skills-plot, results='asis', echo = FALSE, cache = FALSE}
-df = data.frame(c("Ruby (on Rails)", "HTML/CSS", "SQL", "R", "Linux", "Javascript"), c(8, 6, 7, 6, 7, 5))
+df = data.frame(c("Ruby (on Rails)", "SQL", "HTML/CSS", "R", "Javascript"), c(8, 7, 6, 6, 5))
 colnames(df) = c("language", "score")
 d = ggplot(data=df, aes(x=language, y = score))
 d = d + geom_bar(position="dodge",stat="identity") + coord_flip() 
@@ -64,15 +88,24 @@ d = d + theme(axis.text.x = element_text(size=24, family="Helvetica"),axis.text.
 d
 ```
 
-#### And notions of
+#### More tools
 
-<font size="5">Java, Python, Node.js, Matlab, REALbasic</font>
+<font size="5">Also: Git, Heroku, Amazon (EC2, S3, RDS, et.), Linux, Python, Node.js</font>
 
----
+***
 ## Languages
 
 - Dutch (native)
 - English (advanced)
 - Spanish (advanced)
 - French (intermediate)
+
+
+---
+## Contact
+
+#### ik@bramjans.com
+#### https://github.com/bramj
+
+<font size="3">Presentation made with [slidify](http://slidify.org) and [reveal.js](http://lab.hakim.se/reveal-js/#/)</font>
 
