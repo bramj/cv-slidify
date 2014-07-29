@@ -7,10 +7,14 @@ hitheme     : tomorrow      #
 mode        : selfcontained # {standalone, draft}
 revealjs:
   theme: default
+  previewLinks: "true"
 ---
+
+<link rel="stylesheet" href="/Users/bram/Documents/cv-slidify/assets/font-awesome-4.1.0/css/font-awesome.min.css">
 
 ```{r preparecode, echo=FALSE, cache=FALSE}
 library(ggplot2)
+library(knitr)
 ```
 
 # Bram Jans
@@ -25,21 +29,28 @@ library(ggplot2)
 
 --- &vertical
 # Education
+<br />
+<p>
+<i class="fa fa-angle-down fa-3x"></i>
+</p>
 
 ***
-### [2011–2012] Master of Engineering - Computer Science
-<font size="5">
-*University of Leuven, Cum Laude*
-<br>*Thesis: Creating a database of narrative event chains*
-<br>*Specialization Software Engineering and Artificial Intelligence*
-<br>*5 months exchange at the Autonomous University of Barcelona, Spain*
-</font>
+### [2010–2011] Master of Engineering - Computer Science
+- University of Leuven, Cum Laude
+- Specialization Software Engineering and Artificial Intelligence
+- Thesis: Construction and evaluation of databases of narrative event chains
+- 5 months exchange at Autonomous University of Barcelona, Spain
 
+***
 ### [2006–2009] Bachelor of Informatics
-<font size="5">*University of Leuven*</font>
+- University of Leuven
 
 --- &vertical
 # Projects
+<br />
+<p>
+<i class="fa fa-angle-down fa-3x"></i>
+</p>
 
 ***
 ## DataCamp
@@ -68,6 +79,8 @@ library(ggplot2)
     <ul>
       <li>Rails app that maintains documentation of R packages</li>
       <li>Automatically updates the documentation by connecting to an R server on EC2</li>
+      <li>Websolr indexation for fast full-text searches</li>
+      <li>Hosted on Heroku</li>
     </ul>
   </div>
 </a>
@@ -75,37 +88,45 @@ library(ggplot2)
 
 --- &vertical
 # Skills
+<br />
+<p>
+<i class="fa fa-angle-down fa-3x"></i>
+</p>
 
 ***
 
-```{r skills-plot, results='asis', echo = FALSE, cache = FALSE}
+### Technical
+```{r skills-plot, fig.height=4, fig.width=10, fig.align = 'center', results='asis', echo = FALSE, cache = FALSE}
 df = data.frame(c("Ruby (on Rails)", "SQL", "HTML/CSS", "R", "Javascript"), c(8, 7, 6, 6, 5))
 colnames(df) = c("language", "score")
-d = ggplot(data=df, aes(x=language, y = score))
-d = d + geom_bar(position="dodge",stat="identity") + coord_flip() 
-d = d + scale_y_continuous(breaks = seq(0, 12, 1)) 
-d = d + theme(axis.text.x = element_text(size=24, family="Helvetica"),axis.text.y = element_text(size=24))
+d = ggplot(data=df, aes(x=language, y = score, fill = score))
+d = d + geom_bar(position="dodge",stat="identity") + coord_flip()
+d = d + theme(axis.text.x = element_text(size=24, family="Helvetica"),axis.text.y = element_text(size=24), axis.title.x=element_blank(), axis.title.y=element_blank())
+d = d + theme(
+    panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+    panel.grid.minor = element_blank(), 
+    panel.grid.major = element_blank(),
+    plot.background = element_rect(fill = "transparent",colour = NA)
+)
 d
 ```
+<p>
+  <small>Also: Git, Heroku, Amazon (EC2, S3, RDS, et.), Linux, Python, Node.js</small>
+</p>
 
-#### More tools
-
-<font size="5">Also: Git, Heroku, Amazon (EC2, S3, RDS, et.), Linux, Python, Node.js</font>
-
-***
-## Languages
-
-- Dutch (native)
-- English (advanced)
-- Spanish (advanced)
-- French (intermediate)
+### Non-technical
+<small>Dutch (native) - English (advanced) - Spanish (advanced) - French (intermediate)</small>
 
 
 ---
 ## Contact
 
 #### ik@bramjans.com
-#### https://github.com/bramj
 
-<font size="3">Presentation made with [slidify](http://slidify.org) and [reveal.js](http://lab.hakim.se/reveal-js/#/)</font>
+<a href="https://github.com/bramj" target="_blank">
+  <i class="fa fa-github fa-2x"></i>
+</a>
+
+<br />
+<small>Presentation made with [slidify](http://slidify.org) and [reveal.js](http://lab.hakim.se/reveal-js/#/)</small>
 
