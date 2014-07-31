@@ -27,11 +27,13 @@ library(knitr)
   <img width="80px" src="/assets/img/bram.jpg" />
 </a>
 
+<p style="font-size:0.5em;font-style:italic;">Use the arrow keys on your keyboard or in the lower right corner for navigation</p>
+
 --- &vertical
 # Education
 <br />
 <p>
-<i class="fa fa-angle-down fa-3x"></i>
+<a href="#" class="navigate-down"><i class="fa fa-angle-down fa-3x"></i></a>
 </p>
 
 ***
@@ -49,7 +51,7 @@ library(knitr)
 # Projects
 <br />
 <p>
-<i class="fa fa-angle-down fa-3x"></i>
+<a href="#" class="navigate-down"><i class="fa fa-angle-down fa-3x"></i></a>
 </p>
 
 ***
@@ -90,7 +92,7 @@ library(knitr)
 # Skills
 <br />
 <p>
-<i class="fa fa-angle-down fa-3x"></i>
+<a href="#" class="navigate-down"><i class="fa fa-angle-down fa-3x"></i></a>
 </p>
 
 ***
@@ -111,7 +113,7 @@ d = d + theme(
 d
 ```
 <p>
-  <small>Also: Git, Heroku, Amazon (EC2, S3, RDS, et.), Linux, Python, Node.js</small>
+  <small>Also: Git, Heroku, Amazon (EC2, S3, RDS, etc.), Linux, Python, Node.js</small>
 </p>
 
 ### Non-technical
